@@ -1,9 +1,19 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NotFound from "./pages/NotFound";
+
 
 function App() {
   return (
-    <div>
-      <h1 className="bg-red-500">tes</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<>Home Page</>}/>
+        <Route path="/login" element={<>login</>}/>
+        <Route path="/register" element={<>Register</>}/>
+
+        <Route path="*" element={<NotFound/>}/>
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
