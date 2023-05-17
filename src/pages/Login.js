@@ -21,6 +21,8 @@ export default function Login() {
         <Navbar/>
         <AuthLayout>
 
+            
+
             <h1 className="font-medium text-2xl">LOGIN</h1>
 
             <form onSubmit={handleLogin} className="mt-8">

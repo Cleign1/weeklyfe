@@ -1,32 +1,33 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import avatarimg from "../Asset/User-Avatar-in-Suit-PNG.png"
+import ava from '../Assets/ava.png'
 
-function DetailBlog() {
+const DetailBlog = () => {
   return (
     <div>
         <Navbar/>
+
         <div className='max-w-2xl mx-auto'>
-            <p className='mt-20 text-4xl  font-bold tracking-tight mb-6'> Blog Pertama gue</p>
+            <p className='mt-20 text-5xl font-bold tracking-tight mb-6'>Blog Pertamaku</p>
             <hr/>
             <div className='flex my-1'>
-                <img src={avatarimg} alt='' className='w-12'/>                 
-                <div className='ml-2'>
-                    <p className='font-medium text-xl'>Ibnu Khaidar</p>
-                    <p className='text-lg'>18 Mei 2023</p>
-                </div>    
+                <img src={ava} alt='' className='w-16'/>
+                <div className='ml-3'>
+                    <p className='font-medium text-xl'>Jossie Pangaribuan</p>
+                    <p className='text-lg'>17 Mei 2023</p>
+                </div>
                 <div className='my-auto ml-auto mr-2'>
-                    <button className='bg-gray-500 px-4 py-1 rounded text-white active:bg-pink-600'>
+                    <button className='bg-pink-300 py-2 px-4 text-lg font-medium rounded active:bg-pink-400'>
                         Like
                     </button>
                 </div>
             </div>
             <hr/>
             <p className='text-lg mt-6'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ipsum asperiores ut facilis reprehenderit quo totam, aperiam maiores! Ad, corporis quas? Molestias, voluptas fugit! Recusandae quo quos error eligendi voluptatibus ad reiciendis numquam cupiditate incidunt, necessitatibus amet, a eum deserunt esse, doloribus laborum molestiae sapiente tempore tempora! Ab, non. Et quo molestias, provident voluptatum qui officiis. Culpa sapiente sequi iusto tenetur, corrupti aut odio doloribus consequuntur fuga! Cum consectetur nam ipsa commodi animi, adipisci qui modi eaque quas explicabo dolorum culpa nesciunt, molestiae deleniti. Beatae ullam consequuntur maxime, distinctio nihil earum voluptatibus, est illo, eligendi magnam natus temporibus adipisci quos?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facere optio? Mollitia tenetur nulla consequatur sed, neque quae sint dicta vitae tempore veniam modi, quam, officia minus. In asperiores ea ad tempora quisquam laudantium eveniet fuga recusandae neque aliquid blanditiis minima exercitationem nesciunt iste modi dolorum dolorem, consequuntur nihil quibusdam enim sapiente dicta accusamus. Facilis quaerat accusantium soluta necessitatibus temporibus veritatis vero quasi delectus commodi perferendis hic ducimus, consectetur, quae inventore. Assumenda quaerat minus exercitationem voluptatibus ullam, suscipit molestiae deserunt maxime deleniti nesciunt tenetur quisquam ratione vel veritatis totam, quia, sunt iusto repellendus neque temporibus odit at? Quo, eaque reiciendis!
             </p>
         </div>
-        
+
     </div>
   )
 }
