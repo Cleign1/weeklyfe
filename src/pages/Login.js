@@ -3,6 +3,7 @@ import TextInput from "../Components/TextInput";
 import PrimaryButton from "../Components/PrimaryButton";
 import { Link } from "react-router-dom";
 import AuthLayout from "../Layouts/AuthLayout";
+import Navbar from "../Components/Navbar";
 
 export default function Login() {
     const [email, setEmail] = useState(null);
@@ -16,6 +17,8 @@ export default function Login() {
     }
 
     return (
+        <>
+        <Navbar/>
         <AuthLayout>
 
             <h1 className="font-medium text-2xl">LOGIN</h1>
@@ -41,5 +44,6 @@ export default function Login() {
             </form>
 
         </AuthLayout>
+        </>
     )
 }

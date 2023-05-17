@@ -3,6 +3,7 @@ import TextInput from "../Components/TextInput";
 import PrimaryButton from "../Components/PrimaryButton";
 import { Link } from "react-router-dom";
 import AuthLayout from "../Layouts/AuthLayout";
+import Navbar from "../Components/Navbar";
 
 export default function Register() {
     const [email, setEmail] = useState(null);
@@ -22,8 +23,10 @@ export default function Register() {
     }
 
     return (
+        <>
+        <Navbar/>
         <AuthLayout >
-            <h1 className="font-medium text-2xl">REGISTER</h1>
+            <h1 className="flex-auto font-medium text-2xl">REGISTER</h1>
 
             <form onSubmit={handleRegister} className="mt-8">
                 <div className="space-y-5">
@@ -60,5 +63,6 @@ export default function Register() {
                 </div>
             </form>
         </AuthLayout>
+        </>
     )
 }
